@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --basic-c: #000000;
+    --brand-c: rgb(80, 142, 255);
+    --transition: all 0.4s ease;
+    --yellow-color:#ffc400;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+    height: 1000px;
+    font-family: "Lexend", sans-serif;
+}
+
+.navbar {
+    height: 7vh;
+    z-index: 20;
+}
+
+.nav-item a {
+    color: white;
+    transition: var(--transition);
+}
+
+.nav-item a:hover {
+    color: var(--brand-c);
+}
+
+.fa-twitter,
+.fa-envelope,
+.fa-github,
+.fa-phone,
+.fa-youtube {
+    transition: var(--transition);
+}
+
+.fa-twitter:hover,
+.fa-envelope:hover,
+.fa-github:hover,
+.fa-phone:hover,
+.fa-youtube:hover {
+    color: var(--brand-c);
+}
+
+.navbar .btn {
+    padding-block: 3px;
+    padding-inline: 10px;
+    color: black;
+    background-color: white;
+    transition: var(--transition);
+}
+
+.navbar .btn:hover {
+    color: white;
+    background: var(--brand-c);
+}
+
+.nav-two img {
+    width: 12%;
+    margin-right: 10px;
+}
+
+.nav-two .nav-item a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-two .nav-item a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: var(--brand-c);
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.nav-two .nav-item a:hover:after {
+    width: 100%;
+}
+
+.nav-two .nav-item a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--brand-c);
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.nav-two {
+    box-shadow: var(--box-shadow);
+}
+
+.nav-two .btn-primary {
+    background-color: var(--brand-c);
+    color: white;
+    transition: var(--transition);
+}
+
+.nav-icon {
+    display: block;
+    font-size: 17px;
+    margin-inline: 9px;
+    color: var(--brand-c);
+}
+/*end navbar */
+/*  start landing */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+.main-btn,
+.details button{
+    background-color: black;
+    color: var(--yellow-color);
+    padding: 0.5rem 1rem;
+}
+.main-btn:hover{
+   background-color: white;
+   color: var(--dark-color);
+}
+/*  end landing */
+
+/* start feature */
+.main-title::after{
+    content: "";
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 120px;
+    height: 2px;
+    transform: translateX(-50%);
+}
+.feature .icon-holder{
+height: 200px;
+}
+.feature .icon-holder i{
+left: 50%;
+transform: translateX(-50%);
+}
+.feature .icon-holder .number{
+    font-size: 12rem;
+    color: var(--grey-color);
+}
+.feature .icon-holder .icon{
+    color: var(--green-color);
+}
+/* end feature */
+ ul li{
+    list-style-type: none;
+}
+.feat .text span{
+    color: #abb8c3;
+}
+.feat .text p{
+   font-size: 13px;
+}
+.icon p i{
+    font-size: 20px;
+    color:#508eff!important;
+  }
+  .content p{
+    color: #abb8c3;
+  }
+  .button button{
+    border: 0;
+    font-size: 18px;
+   background-color:#508eff !important;
+  }
+  .button button:hover{
+   background-color: black !important;
+   color: white !important;
+  }
+  .hiding-color {
+    opacity: 0; /* إخفاء النص في البداية */
+   
+    z-index: 2;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+   bottom: -80%;
+   
+   left: 0;
+   transition: 0.5s;
+  }
+ 
+   .feat:hover .hiding-color{
+    opacity: 1;
+    bottom: 0;
+    
+  }
+  /* .feat {
+    border: 1px solid red;
+  } */
+   .product p{
+    font-size: 15px;
+    color: #abb8c3 !important;
+   }
+  .product h3::after{
+    content:"" ;
+    display: block;
+    width: 250px;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #19283f;
+    text-align: center;
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+  .service {
+    background-color: #f4f6f7;
+    padding: 50px 0;
+  }
+  .service img{
+    width: 30% !important;
+  }
+  .items img{
+    width: 30%;
+  }
+  .cart h2::after{
+    content: "";
+    display: block;
+    width: 110px;
+    
+    height: 2px;
+   margin: 10px auto;
+    background-color: #508eff;
+  }
+  .cart h3 span{
+    color: #508eff;
+  }

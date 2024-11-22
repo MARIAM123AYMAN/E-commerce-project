@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --basic-c: #000000;
+    --brand-c: rgb(80, 142, 255);
+    --transition: all 0.4s ease;
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-size: 14px;
+    background-color: white;
+    position: relative;
+    height: 1000px;
+    font-family: "Lexend", sans-serif;
+}
+
+.navbar {
+    height: 7vh;
+    z-index: 20;
+}
+
+.nav-item a {
+    color: white;
+    transition: var(--transition);
+}
+
+.nav-item a:hover {
+    color: var(--brand-c);
+}
+
+.fa-twitter,
+.fa-envelope,
+.fa-github,
+.fa-phone,
+.fa-youtube {
+    transition: var(--transition);
+}
+
+.fa-twitter:hover,
+.fa-envelope:hover,
+.fa-github:hover,
+.fa-phone:hover,
+.fa-youtube:hover {
+    color: var(--brand-c);
+}
+
+.navbar .btn {
+    padding-block: 3px;
+    padding-inline: 10px;
+    color: black;
+    background-color: white;
+    transition: var(--transition);
+}
+
+.navbar .btn:hover {
+    color: white;
+    background: var(--brand-c);
+}
+
+.nav-two img {
+    width: 12%;
+    margin-right: 10px;
+}
+
+.nav-two .nav-item a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-two .nav-item a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: var(--brand-c);
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.nav-two .nav-item a:hover:after {
+    width: 100%;
+}
+
+.nav-two .nav-item a.active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--brand-c);
+    margin: 0 auto;
+    transition: var(--transition);
+}
+
+.nav-two {
+    box-shadow: var(--box-shadow);
+}
+
+.nav-two .btn-primary {
+    background-color: var(--brand-c);
+    color: white;
+    transition: var(--transition);
+}
+
+.nav-icon {
+    display: block;
+    font-size: 17px;
+    margin-inline: 9px;
+    color: var(--brand-c);
+}
+
+/* End Of NAV BAR*/
+
+/* Start Landing Page */
+.bayCart {
+    position: absolute;
+    right: 0;
+    top: 320px;
+    padding: 5px 5px;
+    background-color: var(--brand-c);
+    color: white;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 10;
+}
+
+.arrowBack {
+    right: 10px;
+    bottom: 10px;
+    padding: 15px;
+    display: inline-flex;
+    background-color: gray;
+    z-index: 10;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*******************************/
+/* start cat section */
+.cat-item {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    transition: transform 0.5s ease; /* Smooth zoom effect */
+    border-radius: 15px;
+    border: 0.5px solid rgba(128, 128, 128, 0.359);
+}
+
+.cat-item:hover img {
+    transform: scale(1.2); /* Zoom effect on hover */
+}
+
+.cat-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: transform 0.4s ease; /* Apply transition to the image for smooth scaling */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align text to the top-left */
+    align-items: flex-start; /* Align text to the top-left */
+    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    transition: background-color 0.4s ease; /* Smooth transition for the overlay */
+}
+
+.cat-item:hover .overlay {
+    background-color: rgba(231, 216, 216, 0.5); /* Semi-transparent overlay on hover */
+}
+
+.text {
+    position: absolute;
+    top: 25px; /* Distance from the top */
+    left: 25px; /* Distance from the left */
+    color: rgba(0, 0, 0, 0.827); /* Text color */
+    font-size: 22px;
+    font-weight: bold;
+    z-index: 1; /* Ensures text stays above everything */
+    transition: color 0.4s ease; /* Optional transition for text color */
+}
+.section-padding{
+    padding-block: 100px;
+}
+
+/* ************* */
+.phones p {
+    max-width: 600px;
+}
+.col-12 {
+    /* margin-left: 100px; */
+    border-bottom: 2px solid black;
+}

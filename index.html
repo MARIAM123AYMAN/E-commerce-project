@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+
+<body onload="i=setInterval(showClock , 1000)">
+  
+  <nav class="navbar navbar-expand-lg bg-black ">
+    <div class="container">
+      <div class="headerIcons text-white fs-6">
+        <i class="fa-brands fa-twitter mx-1"></i>
+        <i class="fa-solid fa-envelope mx-1"></i>
+        <i class="fa-brands fa-github mx-1"></i>
+        <i class="fa-solid fa-phone mx-1"></i>
+        <i class="fa-brands fa-youtube mx-1"></i>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Our Store</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Delivery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Terms Of Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item d-flex align-items-center mx-5">
+            <div id="clock" class="text-white fs-6"></div>
+          </li>
+        </ul>
+        <button class="btn bg-outline-info" type="submit">Get Discound</button>
+      </div>
+
+    </div>
+  </nav>
+  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary nav-two sticky-lg-top ">
+    <div class="container">
+      <img src="imgs/logo (1).svg" alt="" class="me-5">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Category</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Elements</a>
+          </li>
+        </ul>
+        <button class="btn btn-primary rounded-pill ms-auto"><i class="fa-solid fa-bars text-white"></i>
+          <a href="./Sign &&& Login/login.html" class="text-white">Catalog</a></button>
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <i class="nav-icon ms-3 fa-solid fa-magnifying-glass"></i>
+          <a href="./Sign &&& Login/login.html" class="text-white"><i class="nav-icon fa-solid fa-user"></i></a>
+          <i class="nav-icon fa-regular fa-heart"></i>
+          <i class="nav-icon fa-solid fa-cart-shopping"></i>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class=" bayCart">
+    <i class="nav-icon fa-solid fa-cart-shopping text-white pb-2 pt-2 ps-2"></i>
+    <p>BAY NOW</p>
+  </div>
+  <div class="arrowBack position-fixed">
+    <a href="#Home"><i class="fa-solid fa-angle-up text-white"></i></a>
+  </div>
+
+  <section class="landingPage" id="Home">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12 mt-5" >
+          <h1 data-aos="fade-up" data-aos-delay="50">Ecobee3</h1>
+          <h1 data-aos="fade-up" data-aos-delay="70">Thermo</h1>
+          <h3 data-aos="fade-right" data-aos-delay="90">Smart Home Solutions</h3>
+          <h5 data-aos="fade-left" data-aos-delay="110">Experience a new level of comfort and energy savings with ecobee3 Lite smart thermostat.</h5>
+          <p data-aos="fade-left" data-aos-delay="110">Integrates seamlessly with your preferred smart home system.</p>
+          <button class="btn btn-primary" data-aos="zoom-in">Shop Now</button>
+          <button class="btn btn-dark" data-aos="zoom-in">More Info</button>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="landingImgs">
+            <img src="imgs/blobs-2.png" alt="" class="img-one">
+            <img src="imgs/pic.png" alt="" class="img-two">
+            <img src="imgs/price.png" alt="Thermostat" class="img-three">
+            <!-- <div class="blue-badge text-black">
+              <p>%</p>
+              <p>From</p>
+              <h3>$149.99</h3>
+              <p>$179.99</p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- <p id="project-description"></p> -->
+  <section class="Categroy" id="category">
+    <div class="row">
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+        <a href="Products/phones/phones.html">
+          <div class="cat-item">
+            <img src="imgs/home-2-2.jpg" alt="Image" id="project-description">
+            <div class="overlay">
+              <h6 class="text">Mobile & Accessories</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="cat-item">
+          <img src="imgs/category-2-thegem-product-justified-square-l.jpg" alt="Image" id="project-description">
+          <div class="overlay">
+            <h6 class="text">Bluetooth Headset</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="250">
+        <a href="Products/Headset/headset.html">
+          <div class="cat-item">
+            <img src="imgs/category-2-thegem-product-justified-square-l.jpg" alt="Image" id="project-description">
+            <div class="overlay">
+              <h6 class="text">Bluetooth Headset</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="350">
+        <a href="Products/smart watches/watches.html">
+          <div class="cat-item">
+            <img src="imgs/category-4-thegem-product-justified-square-l.jpg" alt="Image" id="project-description">
+            <div class="overlay">
+              <h6 class="text">Smart Watch</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="shipping section-padding" id="shipping">
+    <div class="container ">
+      <div class="row mx-auto">
+        <div class="col-12 col-md-12 col-lg-4" data-aos="fade-right" data-aos-delay="350">
+          <div class="d-flex justify-content-sm-center align-items-center">
+            <img src="imgs/product-page-19.svg" alt="" class="" id="project-description">
+            <div class="mt-3">
+              <h6>Free Shipping & Return</h6>
+              <p class="text-black-50">Free shipping orders over $99</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-12 col-lg-4" data-aos="fade-up" data-aos-delay="350">
+          <div class="d-flex justify-content-sm-center align-items-center">
+            <img src="imgs/product-page-20.svg" alt="" class="">
+            <div class="mt-3">
+              <h6>Free Shipping & Return</h6>
+              <p class="text-black-50">Free shipping orders over $99</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-12 col-lg-4" data-aos="fade-left" data-aos-delay="350">
+          <div class="d-flex justify-content-sm-center align-items-center">
+            <img src="imgs/product-page-21.svg" alt="" class="">
+            <div class="mt-3">
+              <h6>Free Shipping & Return</h6>
+              <p class="text-black-50">Free shipping orders over $99</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- <div class="container my-5">
+    <h2 class="text-center mb-4">المنتجات المتاحة</h2>
+    <div class="row" id="productContainer"></div>
+  </div> -->
+  <section class="app section-padding" data-aos="flip-left" data-aos-delay="350">
+    <div class="container">
+      <div class="row d-flex align-items-lg-center justify-content-lg-evenly" >
+        <div class="col-ms-12 col-lg-4">
+          <h4>
+            <a href="#">Sales </a>|
+            <a href="#">Offers </a>|
+            <a href="#">Discounts</a>
+            </h5>
+        </div>
+        <div class="col-ms-12 col-lg-6">
+          <h2 class="">Download Our App</h2>
+        </div>
+        <div class="col-ms-12 col-lg-2">
+          <button class="btn btn-dark px-3 rounded-pill">Get Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start Sale Section -->
+  <section class="productSale section-padding mx-auto">
+    <div class="container mx-auto">
+      <div class="tabs-section">
+        <div class="tabs">
+            <button class="tablinks fs-4" onclick="openTab(event, 'tab1', 'tabs1')">Top Sellers</button>
+            <button class="tablinks fs-4" onclick="openTab(event, 'tab2', 'tabs1')">Trendy</button>
+            <button class="tablinks fs-4" onclick="openTab(event, 'tab3', 'tabs1')">Popular</button>
+        </div>
+    
+        <!-- محتويات التبويبات -->
+        <div id="tab1" class="tabcontent tabs1">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3" class="card-img-top" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="https://btech.com/media/catalog/product/6/b/6bb74d7cc8c392788d9502d8cb8b66674b91a6236aea081410fcb616fe04b8b1.jpeg?width=900&store=en&image-type=image" >
+                    <div class="card-body" >
+                      <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                      <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                      <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                      <span>$319.99</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="https://medicine-21.com/eShop/wp-content/uploads/2023/02/61PmBO8nEfS._AC_SL1500_.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                      <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                      <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                      <span>$425.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="https://microless.com/cdn/products/c3f1817f2c0a89c29508146afb394c7f-hi.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                      <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                      <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                      <span>$319.99</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="https://m.media-amazon.com/images/I/61J2nAQfOEL._AC_SL1500_.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                      <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                      <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                      <span>$425.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/smart-home-solutions-2-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                      <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                      <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                      <span>$319.99</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/photo-video-15-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                      <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                      <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                      <span>$425.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/photo-video-3-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                      <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                      <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                      <span>$319.99</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/photo-video-1-2-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                      <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                      <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                      <span>$425.00</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="tab2" class="tabcontent tabs1">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-15-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150"> 
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-9-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-10-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-11-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-12-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-13-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-14-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+                  <div class="card border-0" style="width: 15rem;">
+                    <img src="imgs/tv-sets-monitoring-8-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                      <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                      <span>$1,235.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    
+        <div id="tab3" class="tabcontent tabs1">
+            <div class="container my-5">
+              <h2 class="text-center mb-4">المنتجات المتاحة</h2>
+              <div class="row" id="productContainer" data-aos="fade-up" data-aos-delay="150"></div>
+            </div>
+
+        </div>
+    </div>
+        
+    </div>
+</section>
+
+
+
+  <!--**** start game section*** -->
+
+  <section class="gameSection my-5 section-padding">
+    <div class="container-fluid">
+      <div class="row justify-content-lg-evenly">
+        <div class="col-sm-12 col-md-6 my-3">
+          <div class="game-item game-Item-One movingSection">
+            <h2 data-aos="fade-up" data-aos-delay="150">Xbox Aqua</h2>
+            <h3 class="text-white" data-aos="fade-up" data-aos-delay="150">Core Wireless Controller</h3>
+            <p class="text-white" data-aos="fade-up" data-aos-delay="150">From Golden Gamer's Collection</p>
+            <h2 data-aos="fade-up" data-aos-delay="150">only $161.<span>99</span></h2>
+            <button class="btn btn-dark rounded-pill btn-one" data-aos="flip-left" data-aos-delay="150">Buy Now</button>
+            <button class="btn btn-dark rounded-pill btn-two" data-aos="flip-left" data-aos-delay="150">More Info</button>
+            <img src="imgs/home-3131.png" alt="" data-speed="4">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 my-3">
+          <div class="game-item game-Item-two text-white movingSection">
+            <h2 data-aos="fade-up" data-aos-delay="150">DJI FPV DRONE</h2>
+            <h3 data-aos="fade-up" data-aos-delay="150">Immersive Flight Experience</h3>
+            <p data-aos="fade-up" data-aos-delay="150">From Golden Gamer's Collection</p>
+            <h2 data-aos="fade-up" data-aos-delay="150">only $161.<span>00</span></h2>
+            <button class="btn btn-dark rounded-pill btn-one" data-aos="flip-left" data-aos-delay="150">Buy Now</button>
+            <button class="btn btn-dark rounded-pill btn-two" data-aos="flip-left" data-aos-delay="150">More Info</button>
+            <img src="imgs/home-3030.png" alt="" data-speed="6" class="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start carousel section -->
+  <section class="deals section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/2.jpg" class="card-img-top w-100">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/5.jpg" class="card-img-top ">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/7.jpg" class="card-img-top w-100">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/1.jpg" class="card-img-top w-100">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/3.jpg" class="card-img-top ">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/4.jpg" class="card-img-top w-100">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/8.jpg" class="card-img-top w-100">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/10.jpg" class="card-img-top ">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card border-0 text-center mx-auto" style="width: 15rem;">
+              <img src="imgs/carousel imgs/11.jpg" class="card-img-top w-100">
+              <div class="card-body">
+                <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                <span>$319.99</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- popular section -->
+
+  <div class="popular_trendy section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-sm-12 ">
+          <div class="smart_home_section ">
+            <h4>Hi-Tech Blog</h4>
+            <h2 class="text-white">Smart</h2>
+            <h2 class="text-white">Home</h2>
+            <h2 class="text-white pb-5">Solutions</h2>
+            <button class="btn btn-dark rounded-pill">Read More</button>
+          </div>
+
+          <div class="data">
+            <h4 class="my-4">Featured Products</h4>
+            <div class="d-flex position-relative" data-aos="fade-right" data-aos-delay="350">
+              <img src="imgs/sales/audio-1-thegem-product-justified-square-xxs.jpg" class="flex-shrink-0 me-3 mt-0" alt="...">
+              <div class="mt-3">
+                <h6 class="mt-0">Wireless headphones R38</h6>
+                <p>$125.00</p>
+               
+              </div>
+            </div>
+            <div class="d-flex position-relative" data-aos="fade-right" data-aos-delay="550">
+              <img src="imgs/sales/tablets-eBooks-16-thegem-product-justified-square-xxs.jpg" class="flex-shrink-0 me-3 mt-0" alt="...">
+              <div class="mt-3">
+                <h6 class="mt-0">Wireless headphones R38</h6>
+                <p>$125.00</p>
+              </div>
+            </div>
+            <div class="d-flex position-relative" data-aos="fade-right" data-aos-delay="750">
+              <img src="imgs/sales/mobiles-accessories-27-thegem-product-justified-square-xxs.jpg" class="flex-shrink-0 me-3 mt-0" alt="...">
+              <div class="mt-3">
+                <h6 class="mt-0">Huawei Watch GT 3 Active</h6>
+                <p>$129.99 – $269.99</p>
+              </div>
+            </div>
+            
+            <div class="d-flex position-relative" data-aos="fade-right" data-aos-delay="950">
+              <img src="imgs/sales/tablets-eBooks-4-thegem-product-justified-square-xxs.jpg" class="flex-shrink-0 me-3 mt-0" alt="...">
+              <div class="mt-3">
+                <h6 class="mt-0">Tablet Apple Apple-iPad9</h6>
+                <p>$799.99</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-9 col-sm-12">
+           <div>
+            <div class="tabs-section">
+              <div class="tabs">
+                  <button class="tablinks fs-4" onclick="openTab(event, 'tab4', 'tabs2')">New Arrivals</button>
+                  <button class="tablinks fs-4" onclick="openTab(event, 'tab5', 'tabs2')">Best Deals</button>
+              </div>
+          
+              <!-- content of taps -->
+              <div id="tab4" class="tabcontent tabs2">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/audio-17-thegem-product-justified-portrait-m.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                            <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                            <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                            <span>$319.99</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/audio-1-thegem-product-justified-portrait-m.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                            <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                            <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                            <span>$425.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/gaming-consoles-2-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                            <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                            <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                            <span>$319.99</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/smart-home-solutions-6-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                            <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                            <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                            <span>$425.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/mobiles-accessories-26-2-thegem-product-justified-portrait-m.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                            <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                            <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                            <span>$319.99</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/mobiles-accessories-27-thegem-product-justified-portrait-m.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                            <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                            <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                            <span>$425.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/mobiles-accessories-30-thegem-product-justified-portrait-m.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Gamepad Xbox Series 2</h6>
+                            <p class="card-text text-black-50">Game & Accessories Gaming & Co</p>
+                            <span class="text-black-50 text-decoration-line-through">$399.99</span>
+                            <span>$319.99</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/mobiles-accessories-35-thegem-product-justified-portrait-m.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Robot Vacuum Cleaner RAborock</h6>
+                            <p class="card-text text-black-50">Smart Home Solutions , Vacuum</p>
+                            <span class="text-black-50 text-decoration-line-through">$555.00</span>
+                            <span>$425.00</span>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          
+              <div id="tab5" class="tabcontent tabs2">
+                  <div class="row">
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-15-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-9-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-10-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-11-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-12-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-13-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-14-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-down" data-aos-delay="350">
+                        <div class="card border-0" style="width: 15rem;">
+                          <img src="imgs/tv-sets-monitoring-8-thegem-product-justified-portrait-s.jpg" class="card-img-top">
+                          <div class="card-body">
+                            <h6 class="card-title">Smart V Xiaomi Mi</h6>
+                            <p class="card-text text-black-50">TV VIDEO HOME , TV SETS & MONITOR</p>
+                            <span>$1,235.00</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Start market Section -->
+  <section class="marketSection section-padding">
+    <div class="service text-center ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 " data-aos="fade-down" data-aos-delay="350">
+            <div class="feat ">
+              <img src="imgs/service/home-10.svg" alt="" srcset="">
+              <h4 class="mb-2 mt-4"> New in Markets</h4>
+              <p>Best products all over the world.</p>
+  
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="550">
+            <div class="feat">
+              <img src="imgs/service/home-11.svg" alt="" srcset="">
+              <h4 class="mb-2 mt-4 ">Secure Payments </h4>
+              <p>Safe & fast system transactions.</p>
+  
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="750">
+            <div class="feat">
+              <img src="imgs/service/home-12.svg" alt="" class="w-100">
+              <h4 class="mb-2 mt-4 "> Best Quality</h4>
+              <p>20+ years on the market.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="950">
+            <div class="feat  ">
+              <img src="imgs/service/product-page-22.svg" alt="" srcset="">
+              <h4 class="mb-2 mt-4   "> Return Policy</h4>
+              <p>Easy consumer program.</p>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- start rated section  -->
+<section class="rated section-padding">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="mb-4">Best Rated</h5>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="50">
+          <img src="imgs/rated/mobiles-accessories-2-thegem-product-justified-square-xxs (2).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy A42 5G</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="100">
+          <img src="imgs/rated/gaming-consoles-1-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Xbox Series S</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="150">
+          <img src="imgs/rated/mobiles-accessories-18-thegem-product-justified-square-xxs (2).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy Note 10+ Plus 5G</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$159.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="200">
+          <img src="imgs/rated/mobiles-accessories-19-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy Active 2 Smartwatch 44mm</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$499.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="50">
+        <h4 class="mb-4">Top Selling</h5>
+        <div class="d-flex position-relative my-4">
+          <img src="imgs/rated/smart-home-solutions-11-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy A42 5G</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="100">
+          <img src="imgs/rated/smart-home-solutions-6-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Xbox Series S</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="150">
+          <img src="imgs/rated/tablets-eBooks-5-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy Note 10+ Plus 5G</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$159.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="200">
+          <img src="imgs/rated/gaming-consoles-1-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Xbox Series S</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3" data-aos="fade-down" data-aos-delay="50">
+        <h4 class="mb-4">Best Rated</h5>
+        <div class="d-flex position-relative my-4">
+          <img src="imgs/rated/tablets-eBooks-5-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy A42 5G</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="100">
+          <img src="imgs/rated/mobiles-accessories-18-thegem-product-justified-square-xxs (2).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Xbox Series S</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-secondary"></i>
+            <p>$399.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="150">
+          <img src="imgs/rated/mobiles-accessories-20-thegem-product-justified-square-xxs.jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy Note 10+ Plus 5G</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$159.99</p>
+          </div>
+        </div>
+        <div class="d-flex position-relative my-4" data-aos="fade-down" data-aos-delay="200">
+          <img src="imgs/rated/smart-home-solutions-6-thegem-product-justified-square-xxs (1).jpg" class="flex-shrink-0 " alt="...">
+          <div class="mt-3">
+            <h6 class="mt-0 text-black-50"> Samsung Galaxy Active 2 Smartwatch 44mm</h6>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <p>$499.99</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="mb-4">Best Seller</h5>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="imgs/rated/computers-multimedia-12-thegem-product-justified-square-xl (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="imgs/rated/computers-multimedia-12-2-thegem-product-justified-square-xl (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="imgs/rated/photo-video-9-2-thegem-product-justified-square-xl.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="imgs/rated/photo-video-9-thegem-product-justified-square-xl.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="imgs/rated/mobiles-accessories-34-thegem-product-justified-square-xl (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="imgs/rated/mobiles-accessories-34-2-thegem-product-justified-square-xl (1).jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  -->
+<section class="hi-tech-news section-padding">
+  <h2 class="section-title" data-aos="fade-down" data-aos-delay="50">Hi-Tech News</h2>
+  <div class="container">
+    <div class="news-container">
+      <div class="row g-4">
+        <div class="col-sm-12 col-md-12 col-lg-4 news-item"  data-aos="fade-up" data-aos-delay="350">
+          <div class="news-image">
+              <img src="imgs/tech/home-15-thegem-product-justified-square-m.jpg" alt="Electronics" class="img-fluid">
+              <span class="news-category">Electronics</span>
+          </div>
+          <div class="news-content">
+              <p class="news-author">By <a href="#">Hady Zahran</a> - 9 December 2022</p>
+              <h3 class="news-title">Lorem Ipsum Dolor Sit Amet Quat Memo Sit Amet Ipsum</h3>
+              <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-12 col-lg-4 news-item" data-aos="fade-up" data-aos-delay="550">
+          <div class="news-image">
+            <img src="imgs/tech/home-16-thegem-product-justified-square-m.jpg" alt="Electronics" class="img-fluid">
+              <span class="news-category">Electronics</span>
+          </div>
+          <div class="news-content">
+              <p class="news-author">By <a href="#">Hady Zahran</a> - 9 December 2022</p>
+              <h3 class="news-title">Excepteur Occaecat Cupidatat non Proident Sunt in Culpa</h3>
+              <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+          </div>
+        </div>
+        
+        <div class="col-sm-12 col-md-12 col-lg-4 news-item" data-aos="fade-up" data-aos-delay="750">
+          <div class="news-image">
+            <img src="imgs/tech/home-17-thegem-product-justified-square-m.jpg" alt="Electronics" class="img-fluid">
+              <span class="news-category">Electronics</span>
+          </div>
+          <div class="news-content">
+              <p class="news-author">By <a href="#">Hady Zahran</a> - 9 December 2022</p>
+              <h3 class="news-title">Lorem Ipsum Dolor Sit Amet Quat Memo Sit Amet Ipsum</h3>
+              <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Brands section -->
+
+
+<!-- start footer** -->
+<section class="brands-section section-padding">
+  <h2>Brands And Partners</h2>
+  <div class="brands-slider">
+      <img src="imgs/brand/home-19.svg" data-aos="fade-down" data-aos-delay="50" alt="TalkTalk">
+      <img src="imgs/brand/home-20.svg" data-aos="fade-down" data-aos-delay="150" alt="Nest">
+      <img src="imgs/brand/home-21.svg" data-aos="fade-down" data-aos-delay="250" alt="Garmin">
+      <img src="imgs/brand/home-22.svg" data-aos="fade-down" data-aos-delay="350" alt="Grab">
+      <img src="imgs/brand/home-23.svg" data-aos="fade-down" data-aos-delay="450" alt="Bose">
+      <img src="imgs/brand/home-24.svg" data-aos="fade-down" data-aos-delay="550" alt="Tesla">
+      <img src="imgs/brand/home-25.svg" data-aos="fade-down" data-aos-delay="650" alt="Miata">
+      <img src="imgs/brand/home-26.svg" data-aos="fade-down" data-aos-delay="750" alt="Wacom">
+      <img src="imgs/brand/home-27.svg" data-aos="fade-down" data-aos-delay="850" alt="Udacity">
+  </div>
+  <p class="brands-description">
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  </p>
+</section>
+
+<!-- subscripe section -->
+<section class="newsletter-section py-5 section-padding">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-3 mb-lg-0 text-lg-start text-center">
+        <h1 class="fw-bold text-dark">Weekly Newsletter</h1>
+        <h4 class="mb-1"><strong>Subscribe and receive $10 coupon!</strong></h4>
+        <p>Get all promotions info about our sales and offers</p>
+      </div>
+      <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
+        <form class="d-flex w-100" action="#" method="post">
+          <input type="email" class="form-control form-control-lg me-2 rounded-pill" placeholder="Enter your email..." required>
+          <button type="submit" class="btn btn-lg btn-dark rounded-pill">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="imgs/footer/logo-footer (1).svg" alt="" >
+          <p class="highlight mb-3 fs-3 ">Make stunning shops with TheGem theme!</p>
+          <p class="phone fs-4"><i class="fa-solid fa-phone"></i> Call us now: +123 4567 890</p>
+          <div class="socials">
+            <p>Follow Us in Socials:</p>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h4>Our Store</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Delivery</a></li>
+              <li><a href="#">Support & FAQ</a></li>
+              <li><a href="#">Professional growth</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Risk Disclosure</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Gift Vouchers</a></li>
+              <li><a href="#">Platform Vision</a></li>
+              <li><a href="#">Team Members</a></li>
+              <li><a href="#">Referral Program</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>Copyright © CodexThemes. All Rights Reserved.</p>
+        <p>19th Ave New York, NY 95822, USA</p>
+        <div class="payment-methods">
+          <img src="imgs/footer/visa (1).png" alt="Visa" class="w-25">
+          <img src="imgs/footer/mastercard (1).png" alt="MasterCard" class="w-25">
+          <img src="imgs/footer/paypal (1).png" alt="PayPal" class="w-25">
+          <img src="imgs/footer/bank (1).png" alt="Bank Transfer" class="w-25">
+        </div>
+      </div>
+    </div>
+  </footer>
+   
+  <script>
+    function loadProducts() {
+      const products = JSON.parse(localStorage.getItem('products')) || [];
+      const productContainer = document.getElementById('productContainer');
+      productContainer.innerHTML = ''; // تنظيف المحتوى
+
+      products.forEach((product) => {
+        const col = document.createElement('div');
+        col.className = 'col-md-6 col-lg-3 mb-4';
+        col.innerHTML = `
+          <div class="feat d-flex flex-column align-items-center">
+            <div class="image-container position-relative">
+              <img src="${product.image}" alt="${product.name}" class="w-100 product-image">
+            </div>
+            <p class="text-black fw-bold">${product.name}</p>
+            <h4>${product.name}</h4>
+            <div class="d-flex justify-content-between w-50">
+              <span class="fw-bold">${product.price} $</span>
+            </div>
+            <button class="w-75 main-btn mt-4 rounded-pill">+ Add</button>
+          </div>
+        `;
+        productContainer.appendChild(col);
+      });
+    }
+
+    loadProducts();
+  </script>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

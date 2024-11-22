@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61 61" style="enable-background:new 0 0 61 61;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BEFFEF;}
+	.st1{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M16.2,44.2V21.9c0-0.4-0.4-0.8-0.8-0.8h0c-0.4,0-0.8-0.4-0.8-0.8v-6c0-0.2,0.1-0.3,0.2-0.5l5-6.5
+		C19.9,7.1,20.2,7,20.4,7h24.2c0.2,0,0.5,0.1,0.6,0.3l4.9,6.6c0.1,0.1,0.2,0.3,0.2,0.5l0.1,5.9c0,0.4-0.3,0.8-0.8,0.8l0,0
+		c-0.4,0-0.8,0.4-0.8,0.8v22.3c0,0.4-0.4,0.8-0.8,0.8H17C16.6,44.9,16.2,44.6,16.2,44.2z"/>
+	<path class="st1" d="M31.1,48.4H15.6c-1.9,0-3.4-1.4-3.4-3.1V28.6"/>
+	<line class="st1" x1="44.8" y1="28.6" x2="44.8" y2="31.1"/>
+	<polygon class="st1" points="46.4,24.6 10.6,24.6 10.6,17.5 16,10.5 41,10.5 46.4,17.5 	"/>
+	<line class="st0" x1="46.4" y1="17.5" x2="15.8" y2="17.5"/>
+	<path class="st1" d="M26.7,34.1h-2.9c-1.2,0-2.2-1-2.2-2.2v0c0-1.2,1-2.2,2.2-2.2h6.1"/>
+	<path class="st1" d="M38.4,33.7v-5.2L28.3,38.6l10.1,10.1v-5.3c2.9,0,5.3,2.4,5.3,5.3S41.4,54,38.4,54c5.6,0,10.1-4.5,10.1-10.1
+		C48.6,38.3,44,33.7,38.4,33.7z"/>
+	<line class="st1" x1="46.4" y1="17.5" x2="16.2" y2="17.5"/>
+</g>
+</svg>
